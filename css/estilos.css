@@ -1,0 +1,302 @@
+/*
+GERAL
+*/
+body {
+  margin: 0;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  color: #8B4726;
+  background-color: #E8E8E8;
+  background-image: url("https://www.transparenttextures.com/patterns/circles.png");
+}
+
+.voltar-ao-topo {
+  border-radius: 50%;
+  background-color: #d1c4e9;
+  width: 64px;
+  height: 64px;
+  text-align: center;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+.voltar-ao-topo img {
+  margin-top: 11px;
+}
+
+h1 {
+  font-size: 1.4em;
+  margin: 0.67em 0;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 900;
+}
+
+.secao h2 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 40px
+}
+
+.secao,
+.principal {
+  padding: 60px;
+}
+
+/*Animação
+*/
+
+.principal h1,
+.principal p {
+  position: relative;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: anm;
+  animation-duration: 4s;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes anm {
+    0%   {left:-1000px; top:0px;}
+    100% {left:0px; top:0px;}
+}
+
+@keyframes anm {
+    0%   {left:-1000px; top:0px;}
+    100% {left:0px; top:0px;}
+}
+
+.botao {
+  color: #8f3faf;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color:#f1f1f1;
+  font-size: 10em;
+  border-radius: 3px;
+}
+
+
+/*
+NAVEGAÇÃO
+*/
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #E8E8E8;
+}
+
+nav > a {
+  text-decoration: none;
+  color: #8B4726;
+  font-weight: 700;
+  font-size: 28px;
+  font-family: Pacifico, serif;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+nav ul li {
+  text-align: center;
+  width: 100%;
+}
+
+nav ul li a {
+  display: inline-block;
+  padding: 10px 0;
+  width: 100%;
+  text-decoration: none;
+  color: #8B4726;
+}
+
+    /*
+CABEÇALHO
+    */
+
+header.principal {
+  background-image: url('../img/back.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #8B4726;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  text-align:justify;
+  }
+
+.sobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #E8E8E8;
+  color: #8B4726;
+}
+
+.sobre p {
+  margin-bottom: 2.5em;
+  max-width: 1000px;
+}
+
+.sobre .botao {
+  background-color: #f1f1f1;
+  color: #8B4726;
+}
+
+.servicos .grid div {
+  text-align: center;
+}
+
+  /*
+  FOOTER
+  */
+
+footer {
+  text-align: center;
+  background-color: #E8E8E8;
+  color: #8B4726;
+}
+
+  /*
+  MEDIA QUERIES
+  */
+
+@media screen and (min-width: 768px) {
+    /*
+    NAVEGAÇÃO
+    */
+  nav {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  nav ul {
+    flex-direction: row;
+    width: 70%;
+  }
+
+}
+
+    /*
+    CABEÇALHO
+    */
+
+  header {
+    height: 600px;
+    height: 60vh;
+    justify-content: center;
+  }
+
+    /*
+    SOBRE
+    */
+
+.sobre {
+  justify-content: center;
+  background: linear-gradient(#E8E8E8, #CFCFCF);
+}
+
+
+/*
+CONTATO
+*/
+
+.contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.contato-social {
+  padding: 20px;
+  text-align: center;
+}
+
+.telefone {
+  font-size: 1.5em;
+  text-align:center;
+  color:#8B4726;
+  padding-top: 20px;
+}
+
+.copyright {
+  padding: 20px;
+  text-align: center;
+}
+
+input, textarea, button {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+input {
+  height: 24px;
+}
+
+button {
+  height: 24px;
+}
+
+
+.contatos .grid {
+  grid-column-gap: 50px;
+}
+
+/* ***********************   Produtos   *********************/
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.produto {
+  margin: 8px;
+}
+
+.produto .header {
+  background-color: brown;
+  color: white;
+  font-size: 1.2rem;
+  padding: 8px;
+}
+
+.produto div img {
+  width: 100%;
+}
+
+.produtos {
+  background-color: #E8E8E8;
+}
+
+@media all and (min-width: 768px) {
+
+  .grid {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 3%;
+    justify-content: center;
+  }
+
+}
